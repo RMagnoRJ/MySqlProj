@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-title>MANAGEMENT</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="main-area">
+    <div class="content-area">
+      <div class="header">
+        <br><br><br><br><br>
+        <h1>Product Register</h1>
+        <hr>
+      </div>
+      <div class="container">
+        <!--Add product form-->
+        <div class="form-area">
+          <br>
+          <form #productsForm="ngForm" (ngSubmit)="onProductCreate(productsForm.value)">
+            <label><ion-icon name="grid"></ion-icon>&nbsp;Department</label>
+            <input type="text" name="pName" ngModel>
+            <br><br>
+            <label><ion-icon name="id-card"></ion-icon>&nbsp;Product Name</label>
+            <input type="text" name="desc" ngModel>
+            <br><br>
+            <label><ion-icon name="pricetag"></ion-icon>&nbsp;Product Price</label>
+            <input type="text" name="price" ngModel>
+            <br><br><br><br>
+            <div class="ion-text-center">
+              <input type="submit" value="Add Product">
+              <br><br><br><br><br><br>
+            </div>
+          </form>
+        </div>
+  </div>
+
+  

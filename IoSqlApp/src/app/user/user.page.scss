@@ -1,0 +1,110 @@
+
+
+.main-area{
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+
+.content-area{
+    background-color: #8c9606 ;
+}
+.header{
+    text-align: center;
+    color: #5f0f85;
+    padding: 0px 5px;
+}
+h2{
+    color: #21618C;
+    margin: 0px 0px;
+    font-size: 4ch;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#7907c5;
+}
+
+.container{
+    display: flex;
+}
+.form-area{
+    width: 100%;
+    padding: 10px 15px;
+}
+.product-display-area{
+    width: 100%;
+    padding: 10px 15px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 80%;
+    background-color: #48C9B0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #1ABC9C;
+  }
+
+  #products {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #products td, #products th {
+    padding: 10px;
+  }
+  
+  #products tr:nth-child(even){background-color: #04d19e;}
+  
+  #products tr:hover {background-color: rgb(221, 91, 5)303;}
+  
+  #products th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: middle;
+    background-color: #5f0f85;
+    color: rgb(255, 255, 255);
+  }
+
+  button{
+    border: none;
+    padding: 9px 13px;
+    margin: 0px 5px;
+  }
+
+  .btn-delete{
+    background-color: #d69d01;
+    color: rgb(160, 29, 29);
+    font-size: 105%;
+  }
+
+  .btn-fetch{
+    background-color: #fbff04;
+    color: rgb(160, 29, 29);
+    font-size: 125%;
+    font-weight: bolder;
+  }
+
+  .btn-clear{
+    background-color: #0bd837;
+    color: rgb(160, 29, 29);
+    font-size: 125%;
+    font-weight: bolder;
+  }
+  

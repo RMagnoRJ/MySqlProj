@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-title>STOCK</ion-title>
+  </ion-toolbar>
+</ion-header>
+<br><br><br><br>
+<ion-content>
+  <div class="product-display-area">
+    <h2 class="ion-text-center"><b>Products List</b></h2>
+    <br><br><br>
+    <table id="products" class="ion-text-center">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+      <tr *ngIf="allProducts.length < 1">
+        <td colspan="5">No products available!</td>
+      </tr>
+      <tr *ngFor="let prod of allProducts; index as i">
+        <td>{{ i + 1 }}</td>
+        <td> {{prod.pName}} </td>
+        <td> {{prod.desc}} </td>
+        <td> {{prod.price}} </td>
+        <td><button class="btn-delete" (click)="onDeleteProduct(prod.id)">Delete</button></td>
+      </tr>
+    </table>
+    <hr>
+    <br><br>
+    <div class="ion-text-center">
+        <div class="ion-align-items-center">
+          <button class="ion-align-items-center" class="btn-fetch" type="submit" value="Fetch Product" 
+          (click)="onProductsFetch()">Refresh List</button>
+        </div>
+    </div>
+    <br><br>
+    <div class="ion-text-center">
+      <div class="ion-align-items-center">
+          <button class="btn-clear" (click)="onDeleteAllProduct()">Clear List</button>
+      </div>
+    </div>
+  </div>
+</ion-content>
